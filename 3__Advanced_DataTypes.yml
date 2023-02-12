@@ -26,4 +26,45 @@ sparse sequnce:
   - roll no 
 - 
 
-##  
+##  key: value paris are called maps 
+!!map 
+
+## nested mappings: map within a map 
+name: aravind
+role: 
+  age: 78
+  job: student 
+
+## same as this 
+roles: {age: 78, job: student} 
+
+
+## Paris: keys may have duplicate values 
+pair example: !!pairs 
+  - job: student 
+  - job: teacher 
+
+## same as this 
+pair_example: !!pairs [job: student, job: teacher]
+
+
+## Set: keys only have unique values 
+names: !!set
+  ? Kunal 
+  ? Aravind 
+  ? Kunals 
+
+## dictionary || single key: sequences (entire sequences represented as values)
+people: !!omap 
+  - firstkey: 
+    name: Aravind
+    age: 21
+    height: 176
+  - secondKey: 
+    name: Raghul 
+    age: 50 
+    height: 189
+
+
+
+
