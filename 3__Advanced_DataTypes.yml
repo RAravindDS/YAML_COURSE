@@ -1,0 +1,29 @@
+## Sequence data 
+
+student: !!seq 
+  - marks 
+  - name 
+  - rollNo 
+
+cities: [marks, name, rollNo]  #  same as previous (this is used if you don't concern about identation)
+
+
+## Sometimes, some of the keys will be empty, this is known as sparse sequence 
+sparse sequnce: 
+  - hey
+  - how 
+  -     # sparse sequence
+  - Null 
+  - ok 
+
+## nested sequence 
+-
+  - mango 
+  - orange 
+  - apple 
+- 
+  - marks 
+  - roll no 
+- 
+
+##  

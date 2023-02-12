@@ -1,0 +1,31 @@
+
+# Variable DataType || Syntax: "key":<singleSpace>"Value" or Value 
+"apple": "I am a red fruit 🍎"
+1: "This is aravind roll number"
+
+---  # differentiate the document, because we are using multiple data-types. Yaml only accepts single data type.  
+# List Datatype || Syntax: - "value"
+- first list 
+- second list 
+
+--- 
+# Block style DataType
+block_header: 
+  - list1 
+  - list2   
+
+---
+# Storing the data in Single Line => List 
+
+names: [aravind, brother, AR Rahman, Anirudh]
+# Why we are saving like this? 
+# Before we may get the error for bad identation, if you want to store list in single line and also don't rely on identation. You can use this! 
+
+---
+# Storing the data in Single Line => Dictonary
+{mango: "yello fruit", age: 56}
+
+---
+
+
+...  # we are telling the document is finished. That's all. 

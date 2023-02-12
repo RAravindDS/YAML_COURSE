@@ -1,0 +1,76 @@
+# ----------------------------------------------------String Variables-----------------------------------------------
+
+## Syntax for variable!
+## name: <single-space>Aravind or "Aravind"
+
+myself: "Aravind"  # Note we have space after colon
+fruit: Apple 
+1: "first number"
+
+## Automatically adding new line. 
+
+bio: |
+  Hey my name is aravind.  
+  I am not too much intelligent. So gaining knowledge. 
+
+
+## Writing single lines in multiple line. 
+## (when it passed it considered as one single line, but when I am writing I write as multiple lines)
+
+messages: > 
+  This all will 
+  all be in 
+  one single line 
+
+## same as this: message: This all will be in one single line 
+
+# -------------------------------------------------------OTHER VARIABLES------------------------------------------------- 
+## YAML automatically finds the datatype. 
+
+number: 5434  # integer 
+marks: 98.76  # float
+booleanValue: No  #Or n, N, false, False, FALSE 
+bool: Yes  #Or y, N, yes, Yes, YES
+
+
+## SPECIFY TYPES! 
+
+### INT
+zero: !!int 0 
+positiveNum: !!int 45
+NegativeNum: !!int -45 
+binaryNumber: !!int 0b110001 
+octalNumber: !!int 06574
+hexa: !!int 0x45 
+commanValue: !!int +540__000 
+
+### FLOAT 
+marks: !!float 56.89 
+infinite: !!float .inf 
+
+### NAN
+not a num: .nan 
+
+### NULL 
+null value: !!null Null 
+null value2: !!null null 
+# or NULL, ~ 
+~: This is a null key! 
+
+### boolean 
+boolValues: !!bool y 
+
+### String 
+StringVar: !!str super
+
+### dates 
+date: !!timestamp 2001-05-22
+
+## time 
+time: !!timestamp 2001-05-22T02:59:43.10 +5:30  # our time jone +5:30 (if you don't want just remove it)
+
+## exponents 
+exponentional Numbers: 6.023E56E 
+
+
+
