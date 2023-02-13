@@ -39,7 +39,7 @@ role:
 roles: {age: 78, job: student} 
 
 
-## Paris: keys may have duplicate values 
+## Pairs: keys may have duplicate values 
 pair example: !!pairs 
   - job: student 
   - job: teacher 
@@ -48,7 +48,7 @@ pair example: !!pairs
 pair_example: !!pairs [job: student, job: teacher]
 
 
-## Set: keys only have unique values 
+## Set: will allow you to have only unique values 
 names: !!set
   ? Kunal 
   ? Aravind 
@@ -56,14 +56,29 @@ names: !!set
 
 ## dictionary || single key: sequences (entire sequences represented as values)
 people: !!omap 
-  - firstkey: 
+  firstkey:
     name: Aravind
     age: 21
     height: 176
-  - secondKey: 
-    name: Raghul 
-    age: 50 
+  secondKey:
+    name: Raghul
+    age: 50
     height: 189
+
+## Reusing some properties with anchors 
+
+likings: &base ## this properties I need to use (you can give any name &like or &love)
+  fav fruit: mango 
+  dislikes: grapes 
+
+person: 
+  name: Aravind 
+  <<: *base ## just consier entire likings is copy pasted here. 
+  dislikes: berries ## we are overwritting the likings 
+
+ 
+
+
 
 
 
