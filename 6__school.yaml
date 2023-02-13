@@ -1,0 +1,7 @@
+School: 
+  - name: "DPS"
+    principal: "Someone"
+    Students: 
+    - student1: Aravind 
+      rollNo: 879
+      Marks: 89
